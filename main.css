@@ -3,7 +3,7 @@ body {
     overflow-y: scroll;
 	padding: 0;
 	margin: 0;
-    
+    overflow: hidden;
 }
 
 #viewport {
@@ -14,13 +14,51 @@ body {
     top: 0;
     right: 0;
     bottom: 0;
+	overflow: hidden;
 }
-.page-wrapper {
-	padding: 0px;
-	margin: 12px 48px;
-	position: absolute;
-	left: 0;
+.info{
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	background-color: #6665657e;
+	padding-top: 0.6%;
+	padding-bottom: 0.6%;
+	padding-right: 2%;
+	padding-left: 2%;
+	font-size: 200%;
+	color: #FFFFFF;
+
+}
+#header{
 	top: 0;
-	width: calc(100% - 2*48px);
-	word-wrap: break-word;
+	left: 0;
+	text-align: left;
 }
+
+#footer{
+	bottom: 0;
+	right: 0;
+	text-align: right;
+}
+a:link {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:visited {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: white;
+	background-color: transparent;
+  }
+  
+  a:active {
+	color: white;
+	background-color: transparent;
+	text-decoration: underline;
+  }
